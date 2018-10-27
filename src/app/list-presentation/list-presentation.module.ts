@@ -7,6 +7,7 @@ import {MatButtonModule, MatListModule} from '@angular/material';
 import {PresentListService} from './services/present-list.service';
 import {FormViewComponent} from './form-view/form-view.component';
 import {EvalFormParserModule} from '../eval-form-parser/eval-form-parser.module';
+import { StudentTableViewComponent } from './student-table-view/student-table-view.component';
 
 
 const routes:Routes=[
@@ -23,7 +24,7 @@ const routes:Routes=[
     MatButtonModule,
     EvalFormParserModule
   ],
-  declarations: [ListMainComponent, FormViewComponent],
+  declarations: [ListMainComponent, FormViewComponent, StudentTableViewComponent],
   providers:[PresentListService]
 })
 export class ListPresentationModule { }
