@@ -1,4 +1,4 @@
-.container {
+.container-f {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -19,5 +19,69 @@
 
 .form-card-header {
 
+}
+
+.submit-button
+{
+  margin-top: 30px;
+  max-width: 200px;
+  background-color: #7f1ab8;
+  color: white;
+
+}
+
+.footer-banner
+{
+  padding-top: 10px;
+  position: fixed;
+  color: white;
+  height: 65px;
+  min-width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: #4CD964;
+  transition: 0.5s;
+  line-height: 0.1;
+}
+
+.no-footer-banner{
+  position: fixed;
+  color: white;
+  height: 0;
+  min-width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: #4CD964;
+  transition: 0.5s;
+}
+
+.top-banner
+{
+  padding-top: 10px;
+  position: fixed;
+  color: white;
+  height: 65px;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  background-color: #4CD964;
+  transition: 0.5s;
+  line-height: 0.1;
+}
+
+.no-top-banner{
+  position: fixed;
+  color: white;
+  height: 0;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  text-align: center;
+  background-color: #4CD964;
+  transition: 0.5s;
 }
 

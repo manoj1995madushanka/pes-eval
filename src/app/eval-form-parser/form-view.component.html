@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-f">
 
   <div class="flex-item">
 
@@ -15,9 +15,23 @@
   <div *ngFor="let sec of sectionList">
     <app-section-parser [section]="sec"> </app-section-parser>
   </div>
+      <button class="submit-button" mat-button (click)="saveForm()" [disabled]="buttonDisabled"> Submit </button>
 
 </mat-card>
+
   </div>
 
+
+</div>
+
+<div [className]="hideBottom?'no-footer-banner':'footer-banner'">
+  <p> {{stateStatus}}  <strong>{{currentGroup}}</strong></p>
+  <strong><p>{{time}}</p></strong>
+
+</div>
+
+<div [className]="hideTop?'no-top-banner':'top-banner'">
+  <p> {{stateStatus}}  <strong>{{currentGroup}}</strong></p>
+  <strong><p>{{time}}</p></strong>
 </div>
 
